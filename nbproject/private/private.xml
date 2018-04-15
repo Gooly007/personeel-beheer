@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/valerie/Documents/NetBeansProjects/kpc2/resources/views/includes/header.blade.php</file>
+            <file>file:/C:/Users/valerie/Documents/NetBeansProjects/kpc2/resources/views/layouts/app.blade.php</file>
+            <file>file:/C:/Users/valerie/Documents/NetBeansProjects/kpc2/resources/views/layouts/registration_layout.blade.php</file>
+            <file>file:/C:/Users/valerie/Documents/NetBeansProjects/kpc2/app/Http/Controllers/Auth/LoginController.php</file>
+            <file>file:/C:/Users/valerie/Documents/NetBeansProjects/kpc2/resources/views/includes/footer.blade.php</file>
+            <file>file:/C:/Users/valerie/Documents/NetBeansProjects/kpc2/routes/web.php</file>
+            <file>file:/C:/Users/valerie/Documents/NetBeansProjects/kpc2/resources/views/personeel/registratie.blade.php</file>
+            <file>file:/C:/Users/valerie/Documents/NetBeansProjects/kpc2/resources/views/mutaties/overtime.blade.php</file>
+            <file>file:/C:/Users/valerie/Documents/NetBeansProjects/kpc2/resources/views/layouts/navigation.blade.php</file>
+            <file>file:/C:/Users/valerie/Documents/NetBeansProjects/kpc2/app/Http/Controllers/HomeController.php</file>
+            <file>file:/C:/Users/valerie/Documents/NetBeansProjects/kpc2/resources/views/personeel/pers_zoeken.blade.php</file>
+        </group>
+    </open-files>
+</project-private>
