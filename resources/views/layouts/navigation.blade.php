@@ -2,7 +2,6 @@
     <div class="sidebar-collapse">
         <ul class="nav metismenu" id="side-menu">
             <li class="nav-header">
-                
                 <div class="dropdown profile-element">
                     <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                         <span class="clear">
@@ -26,38 +25,28 @@
                 </div>
             </li>
             
-            <li class="{{ isActiveRoute('main') }}">
+            <li class="active">
                 <a href="{{ url('/main') }}"><i class="fa fa-home"></i> <span class="nav-label">Home</span></a>
             </li>
             
-            <li class="{{ isActiveRoute('Personeel') }}">
-                <a href=""><i class="fa fa-user-circle-o"></i> <span class="nav-label">Personeel</span><span class="fa arrow"></span></a>
+            <li>
+                <a href="#"><i class="fa fa-user-circle-o"></i> <span class="nav-label">Personeel</span><span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level collapse">
-                    <li>
-                        <a href="{{ url('/perszoeken') }}">Zoeken</a>
-                    </li>
-                    <li>
-                        <a href="{{ url('/registratie') }}">Registreren</a>
-                    </li>
+                    <li><a href="{{ url('/perszoeken') }}">Zoeken</a></li>
+                    <li><a href="{{ url('/registratie') }}">Registreren</a></li>
                 </ul>
             </li>
             
-            <li class="{{ isActiveRoute('Mutaties') }}">
+            <li>
                 <a href=""><i class="fa fa-pencil"></i> <span class="nav-label">Mutaties</span><span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level collapse">
-                    <li>
-                        <a href="{{ url('/vakantie') }}">Vakantie</a>
-                    </li>
-                    <li>
-                        <a href="{{ url('/verzuim') }}">Verzuim</a>
-                    </li>
-                    <li>
-                        <a href="{{ url('/overtime') }}">Overtime</a>
-                    </li>
+                    <li><a href="{{ url('/vakantie') }}">Vakantie</a></li>
+                    <li><a href="{{ url('/verzuim') }}">Verzuim</a></li>
+                    <li><a href="{{ url('/overtime') }}">Overtime</a></li>
                 </ul>
             </li>
             
-            <li class="{{ isActiveRoute('minor') }}">
+            <li>
                 <a href="{{ url('/minor') }}"><i class="fa fa-th-large"></i> <span class="nav-label">Minor view</span> </a>
             </li>
             

@@ -128,7 +128,7 @@
 <body>
 
   <!-- Wrapper-->
-  <div id="wrapper">
+    <div id="wrapper">
 
         <!-- Navigation -->
         @include('layouts.navigation')
@@ -143,11 +143,11 @@
             @yield('content')
 
             <!-- Footer -->
+            
             @include('includes.footer')
-
+            @include('layouts.footer')
         </div>
         <!-- End page wrapper-->
-
     </div>
     <!-- End wrapper-->
 

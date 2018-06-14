@@ -11,8 +11,8 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="{{ asset('font-awesome/css/font-awesome.css') }}" />
     
-    <link rel="stylesheet" href="{{ asset('css/vendor.css') }}" />
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/vendor.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
          
     @yield('header')
     
@@ -27,13 +27,12 @@
   <div id="wrapper">
 
         <!-- Navigation -->
-        @include('layouts.navigation')
+
 
         <!-- Page wraper -->
         <div id="page-wrapper" class="gray-bg">
 
             <!-- Page wrapper -->
-            @include('layouts.topnavbar')
 
             <!-- Main view  -->
             @yield('content')
