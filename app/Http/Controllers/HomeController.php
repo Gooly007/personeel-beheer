@@ -18,4 +18,12 @@ class HomeController extends Controller
     {
         return view('personeel/registratie');
     }   
+    public function pers_zoeken()
+    {
+        return view('personeel/pers_zoeken');
+    }   
+    public function welcome()
+    {
+        return view('welcome');
+    }   
  }
