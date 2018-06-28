@@ -47,5 +47,9 @@ class pers_controller extends Controller
         return view('personeel/pers_zoeken', compact('personeel'));
     }
 
+        public function personeel_teamleider()
+    {
+        return view('personeel/teamleider');
+    }
     
 }

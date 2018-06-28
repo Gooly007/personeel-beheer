@@ -26,4 +26,8 @@ class HomeController extends Controller
     {
         return view('welcome');
     }   
+    public function bureaus()
+    {
+        return view('administratie/bureaus');
+    }   
  }
