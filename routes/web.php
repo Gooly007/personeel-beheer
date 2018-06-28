@@ -17,24 +17,61 @@ Route::get('/', function () {
 });
 
 Auth::routes();
-
+Route::get('/', 'HomeController@index')->name("main")->middleware('auth');
 Route::get('/main', 'HomeController@index')->name("main")->middleware('auth');
 Route::get('/minor', 'HomeController@minor')->name("minor")->middleware('auth');
+/* Test old */
+Route::get('/welcome','HomeController@welcome')->name("welcome")->middleware('auth');
 
-/* Routes to Personeel information */
-Route::get('/registratie', 'HomeController@registratie')->name("registratie")->middleware('auth');
+/* Routes to Administratie */
+Route::get('/bureaus','bureausController@index')->name("bureaus")->middleware('auth');
+Route::post('/bureaus','bureausController@store')->middleware('auth');
 
-Route::get('/perszoeken', function() {
-    return view('personeel/pers_zoeken');
-});
+/* Routes to Personeel information Registration */
+Route::get('/registratie', 'pers_controller@personeel_registratie')->name("registratie")->middleware('auth');
+Route::get('/pers_zoeken', 'pers_controller@personeel_zoeken')->name("pers_zoeken")->middleware('auth');
+Route::get('/teamleider', 'pers_controller@personeel_teamleider')->name("teamleider");
 
 /* Routes to Mutaties */
-Route::get('/overtime', function() {
-    return view('mutaties/overtime');
+/* overtime mutatie */
+Route::get('/overtime', 'mutaties_controller@overtime')->name("overtime")->middleware('auth');
+/* vakantie mutatie */
+Route::get('/vakantie', 'mutaties_controller@vakantie')->name("vakantie")->middleware('auth');
+/* verzuim mutatie */
+Route::get('/verzuim', 'mutaties_controller@verzuim')->name("verzuim")->middleware('auth');
+
+
+
+
+/*
+| 
+|--------------------------------------------------------------------------
+| Sample Codes for other functions
+|--------------------------------------------------------------------------
+|
+|
+*/
+
+/* Route to query all personeel in DB */
+Route::get('/test_perszoeken', function() {
+    $personeel = DB::table('personeel_gegevens')->get();
+    // return $personeel;
+    return view('test_personeel/pers_zoeken', compact('personeel'));
+})->middleware('auth');
+
+/* Route to query personeel op id in DB */
+Route::get('/test_perszoeken/{id}', function($id) {
+    $personeelid = personeel_id::find($id);
+    // return $personeelid;
+    return view('test_personeel/pers_zoeken.show', compact('personeelid'));
 });
-Route::get('/vakantie', function() {
-    return view('mutaties/vakantie');
-});
-Route::get('/verzuim', function() {
+/* verzuim mutatie */
+Route::get('/sample', function() {
     return view('mutaties/verzuim');
+})->middleware('auth');
+
+/* Sample test Routes */
+Route::get('foo', function () {
+    return 'Bar';
 });
+Route::get('personeel', 'pers_controller@index');
