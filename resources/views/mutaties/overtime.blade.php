@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.algemeen')
 
 <!-- Assign page title -->
 @section('title', 'Overtime')

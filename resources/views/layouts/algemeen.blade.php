@@ -49,14 +49,14 @@
     <!-- End wrapper-->
 
     <!-- MetsiMenu -->
-    <script src="{{ asset('js/plugins/metisMenu/jquery.metisMenu.js') }}" type="text/javascript"></script>
+    <!-- <script src="{{ asset('js/plugins/metisMenu/jquery.metisMenu.js') }}" type="text/javascript"></script> -->
 
     <!-- SlimScroll -->
-    <script src="{{ asset('js/plugins/slimscroll/jquery.slimscroll.min.js') }}" type="text/javascript"></script>
+    <!-- <script src="{{ asset('js/plugins/slimscroll/jquery.slimscroll.min.js') }}" type="text/javascript"></script> -->
     <!-- Peace JS -->
     <script src="{{ asset('js/plugins/pace/pace.min.js') }}" type="text/javascript"></script>
     <!-- Custom and plugin javascript -->
-    <script src="{{ asset('js/inspinia.js') }}" type="text/javascript"></script>
+    <!-- <script src="{{ asset('js/inspinia.js') }}" type="text/javascript"></script> -->
 
     <!-- Main Angular scripts-->
     <!-- <script src="{{ asset('js/angular/angular.min.js') }}" type="text/javascript"></script> -->
